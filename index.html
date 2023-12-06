@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+</head>
+<body>
+    
+    <input type="text" id="getText" placeholder="Tag:">
+    <button id="buttonGet">Adicionar</button>
+    <button id="clear">Limpar</button>
+
+    <div id="user"></div>
+
+    <script>
+        const input = document.getElementById('getText');
+        const botao = document.getElementById('buttonGet');
+        const clear = document.getElementById('clear');
+        const user = document.getElementById('user');
+
+        botao.addEventListener('click', () => {
+            user.innerHTML += input.value;
+        });
+
+        clear.addEventListener('click', () => {
+            user.innerHTML = '';
+            input.value = '';
+        });
+    </script>
+</body>
+</html>
