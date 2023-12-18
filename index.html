@@ -9,18 +9,18 @@
 <body>
     
     <input type="text" id="getText" placeholder="Tag:">
-    <button id="buttonGet">Adicionar</button>
-    <button id="clear">Limpar</button>
+    <button id="buttonGet">Add</button>
+    <button id="clear">Clear</button>
 
     <div id="user"></div>
 
     <script>
         const input = document.getElementById('getText');
-        const botao = document.getElementById('buttonGet');
+        const button = document.getElementById('buttonGet');
         const clear = document.getElementById('clear');
         const user = document.getElementById('user');
 
-        botao.addEventListener('click', () => {
+        button.addEventListener('click', () => {
             user.innerHTML += input.value;
         });
 
